@@ -16,22 +16,22 @@ public class Save {
 		EntityTransaction et = em.getTransaction();
 		
 		Nation n1 = new Nation();
-		n1.setNid(1);
-		n1.setName("India");
+		n1.setNid(2);
+		n1.setName("USA");
 		
 		Parties p1 = new Parties();
-		p1.setPid(101);
-		p1.setPname("BJP");
+		p1.setPid(201);
+		p1.setPname("Democratic Party");
 		p1.setNation(n1);
 		
 		Parties p2 = new Parties();
-		p2.setPid(102);
-		p2.setPname("Congress");
+		p2.setPid(202);
+		p2.setPname("Republican Party");
 		p2.setNation(n1);
 		
 		Parties p3 = new Parties();
-		p3.setPid(103);
-		p3.setPname("AJP");
+		p3.setPid(203);
+		p3.setPname("Libertarian Party");
 		p3.setNation(n1);
 		
 		et.begin();
